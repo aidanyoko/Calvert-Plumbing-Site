@@ -65,3 +65,4 @@ footer{background:var(--navy);color:#9db0ca;text-align:center;padding:28px 20px 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .hp{display:none}
 .msg{font-weight:600;margin:0}.msg.ok{color:#1a8a4a}.msg.err{color:var(--red)}
+.photo{margin:36px 0 0}.photo img{width:100%;height:auto;border-radius:12px;display:block;border:1px solid var(--line)}.photo figcaption{color:var(--mut);font-size:.9rem;margin-top:8px}
