@@ -1,0 +1,1 @@
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var d=new FormData(e.target);var b="Name: "+d.get("n")+"\nPhone: "+d.get("p")+"\nNeed: "+d.get("s")+"\n\n"+d.get("m");location.href="mailto:calvertplumbingandbackflow@gmail.com?subject="+encodeURIComponent("Service request: "+d.get("s"))+"&body="+encodeURIComponent(b)});
