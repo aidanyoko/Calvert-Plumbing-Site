@@ -79,12 +79,17 @@
 <h2>Request service</h2>
 <div class="contact">
 <form id="f">
-<label>Your name<input name="n" required autocomplete="name"></label>
-<label>Phone<input name="p" type="tel" required autocomplete="tel"></label>
-<label>What do you need?<select name="s"><option>Leak or burst pipe</option><option>Clogged drain</option><option>Water heater</option><option>Sewer or main line</option><option>Backflow test</option><option>Something else</option></select></label>
-<label>Details<textarea name="m" rows="4"></textarea></label>
+<input type="hidden" name="access_key" value="a5e0226d-4f0e-4f43-aeca-1af5996dc4e4">
+<input type="hidden" name="subject" value="New service request from your website">
+<input type="hidden" name="from_name" value="Calvert Plumbing Website">
+<input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+<label>Your name<input name="name" required autocomplete="name"></label>
+<label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+<label>What do you need?<select name="service"><option>Leak or burst pipe</option><option>Clogged drain</option><option>Water heater</option><option>Sewer or main line</option><option>Backflow test</option><option>Something else</option></select></label>
+<label>Details<textarea name="message" rows="4"></textarea></label>
 <button class="btn red" type="submit">Send request</button>
-<p class="small">This opens your email app. For an emergency, call instead.</p>
+<p id="status" class="msg" role="status" aria-live="polite"></p>
+<p class="small">For an emergency, call (443) 995-4228 instead.</p>
 </form>
 <div class="info">
 <h3>Calvert Plumbing and Backflow Services</h3>

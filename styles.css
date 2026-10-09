@@ -63,3 +63,5 @@ footer{background:var(--navy);color:#9db0ca;text-align:center;padding:28px 20px 
 .mcall{display:none}
 @media(max-width:760px){.mcall{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--red);color:#fff;justify-content:center;padding:14px 12px calc(14px + env(safe-area-inset-bottom,0px));font-weight:700;text-decoration:none;font-size:1.1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hp{display:none}
+.msg{font-weight:600;margin:0}.msg.ok{color:#1a8a4a}.msg.err{color:var(--red)}
